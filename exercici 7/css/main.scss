@@ -55,17 +55,11 @@ form{
 }
 /** estilos tab **/
 #nav-home-tab{
-  border-bottom:6px solid #CC1414;
-}
-#nav-profile-tab{
-  border-bottom:3px solid #14cc1d;
+  border-bottom:0px solid #CC1414;
 }
 :active #nav-home-tab{
-  border-bottom:3px solid #CC1414;
+  border-bottom:0px solid #CC1414;
 }
-:active #nav-profile-tab{
-  border-bottom:3px solid #CC1414;
-}
-:active #nav-contact-tab{
+.nav-link{
   border-bottom:3px solid #CC1414;
 }
