@@ -5,34 +5,344 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos_ejercicio_sprint2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"-->
     <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></!--script-->
     <title>BOOTSTRAP Ejercicio 7 / Nivel 3 - SPRINT 2</title>
 </head>
 <body>
-      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<!-- menú navegación cabecera-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container pt-2">
+    <a class="navbar-brand me-5 ms-2" href="#"><img src="img/logo-bookmark.svg" alt="logo bookmark" width="150" height="24"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end mt-2 me-5 ms-5" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item m-4">
+          <a class="nav-link" href="#"><small>FEATURES</small></a>
+        </li>
+        <li class="nav-item m-4">
+          <a class="nav-link" href="#"><small>PRICING</small></a>
+        </li>
+        <li class="nav-item m-4">
+          <a class="nav-link" href="#"><small>CONTACT</small></a>
+        </li>
+        <li class="nav-item m-4">
+          <button type="button" class="btn btn-danger">&nbsp;&nbsp;<small>LOGIN</small>&nbsp;&nbsp;</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div class="container col-xxl-12 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="img/illustration-hero.svg" class="d-block mx-lg-auto img-fluid" alt="illustration-hero" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold mb-3">A Simple Bookmark Manager</h1>
+      <p class="lead me-5">A clean and simple interface to organize your favorite websites. Open a new browser tab and see
+        your sites load instanly. Try it for free.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get it on Chrome</button>
+        <button type="button" class="btn btn-secondary btn-lg px-4">Get it on Firefox</button>
       </div>
     </div>
   </div>
 </div>
+
+<!--tabs opciones-->
+
+<div class="container-fluid row justify-content-center mx-auto">
+  <div class="col-sm-12 p-1 ms-3 text-white">
+    <h1 class="text-body ms-4 text-center fw-bold">Features</h1>
+    <p class="text-secondary ms-4 pt-3 text-center lead me-5">Our aim is to make it quick and easy for your<br> to access your
+      favourite websites. Your bookmarks sync between your devices<br> so you can access them on the go.
+    </p>
+  </div>    
+</div>
+
+<div class="tab-content col-sm-12 justify-content-center row container-fluid">
+  <div class="tab-pane fade show active col-sm-12 p-5 ms-5 container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+<nav>
+  <div class="nav nav-tabs justify-content-center bg-light" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+  </div>
+</nav>
+<div class="tab-content row container-fluid justify-content-center" id="nav-tabContent">
+  <div class="tab-pane fade show active row col-sm-12" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        
+    <div class="container col-xxl-12 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-3">Bookmark in one click</h1>
+          <p class="lead me-5">Organize your bookmarks however you like. Our simple
+            drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="img/illustration-features-tab-1.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div class="container col-xxl-12 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-3">Intelligent Search</h1>
+          <p class="lead me-5">Our powerful search feature will help you find saved sites in no time at all. 
+            No need to trawl through all of your bookmarks.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="img/illustration-features-tab-2.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+  <div class="container col-xxl-12 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+     
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold mb-3">Share you bookmarks</h1>
+        <p class="lead me-5">Easily share your bookmarks and collections with others. Create a shareable link that you
+          can send at the click of a button.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
+        </div>
+      </div>
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="img/illustration-features-tab-3.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!--cards opciones navegadores-->
+
+<div class="container-fluid row justify-content-center mx-auto pt-5">
+  <div class="col-sm-12 p-1 ms-3 text-white">
+    <h1 class="text-body ms-4 text-center fw-bold">Download the extension</h1>
+    <p class="text-secondary ms-4 pt-3 text-center lead me-5">We'we got more browsers in the pipeline. 
+      Please do let us know if<br> you've got a favourite you'd like us to prioritize. 
+    </p>
+  </div>    
+</div>
+ 
+<div class="row container-fluid justify-content-center col-sm-12 pt-5">
+
+    <div class="col-12 col-sm-2 text-center">      
+      <div class="shadow-sm p-3 mb-5 bg-body rounded">
+        <img src="img/logo-chrome.svg" class="mx-lg-auto img-fluid pb-5" alt="logo chrome" loading="lazy">
+        <br>
+        <h4 class="fw-bold">Add to Chrome</h1>
+        <p class="text-secondary">Minimum version 62</p>
+        <br> 
+        <hr class="border-2 border-top border-secondary">
+        <br>
+        <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button> 
+        <br>
+     </div>
+    </div>
+
+    <div class="col-12 col-sm-2 text-center pt-5">
+      <div class="shadow-sm p-3 mb-5 bg-body rounded">
+        <img src="img/logo-firefox.svg" class="mx-lg-auto img-fluid pb-5" alt="logo firefox" loading="lazy">
+        <br>
+        <h4 class="fw-bold">Add to Firefox</h1>
+        <p class="text-secondary">Minimum version 55</p>
+        <br> 
+        <hr class="border-2 border-top border-secondary">
+        <br> 
+        <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button> 
+      </div>
+    </div>
+
+
+    <div class="col-12 col-sm-2 text-center pt-5 mt-5 justify-content-center">
+      <div class="shadow-sm p-3 mb-5 bg-body rounded">
+        <img src="img/logo-opera.svg" class="mx-lg-auto img-fluid pb-5" alt="logo opera" loading="lazy">
+        <br>
+        <h4 class="fw-bold">Add to Opera</h1>
+        <p class="text-secondary">Minimum version 46</p>
+        <br> 
+        <hr class="border-2 border-top border-secondary">
+        <br>
+        <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button>    
+      </div>
+   </div>
+
+</div>
+<br>
+<br>
+
+  <!---faqs-->
+  <div class="container-fluid row justify-content-center mx-auto">
+    <div class="col-sm-12 p-1 ms-3 text-white">
+      <h1 class="text-body ms-4 text-center fw-bold">Frequently Asked Questions</h1>
+      <p class="text-secondary ms-4 pt-3 text-center lead me-5">Here are some of our FAQs. If you have any
+        other questions<br> you'd like answered please feel free to email us.
+      </p>
+    </div>    
+  </div>
+
+  <div class="container row justify-content-center mx-auto pt-5">
+    <div class="accordion accordion-flush container col-sm-6" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <b>What is Bookmark?</b>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <b>How can I request a new browser?</b>
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <b>Is there a mobile app?</b>
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+           <b>What about other Chromium browsers?</b>
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="container row justify-content-center mx-auto pt-5">
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button type="button" class="btn btn-primary btn-lg px-5">More info</button>
+  </div>
+</div>
+<br>
+<br>
+
+<!-- footer-->
+<div class="container-fluid row justify-content-center mx-auto bg-formulario">
+  <div class="col-sm-12 p-1 ms-3">
+    <h6 class="text-center text-pie-separado"><pre>35.000 + ALREADY JOINED</pre></h6>
+    <h3 class="text-cabecera-form ms-4 text-center fw-bold">Stay up-to-date with what<br> we're doing</h1>
+    <br>
+    <form class="row g-3 justify-content-center mx-auto needs-validation" novalidate>
+      <div class="col-auto position-relative">
+        <label for="inputEmail" class="visually-hidden">Enter your email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+        <div class="invalid-tooltip">Formato de e-mail incorrecto</div>
+        <div class="valid-tooltip">E-mail correcto</div>
+      </div>
+    
+      <div class="col-auto">
+        <button type="submit" class="btn btn-danger btn-ColorSecundari mb-3">Contact us</button>
+      </div>
+    </form>
+  </div>    
+</div>
+
+    <nav class="navbar navbar-expand-lg navbar-light alturaNavbar">
+      <div class="container pt-2">
+        <a class="navbar-brand me-5 ms-2" href="#"><img src="img/logo-bookmark.svg" alt="logo bookmark" width="150" height="24"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-start mt-2 me-5 ms-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item m-4">
+              <a class="nav-link text-white" href="#"><small>FEATURES</small></a>
+            </li>
+            <li class="nav-item m-4">
+              <a class="nav-link text-white" href="#"><small>PRICING</small></a>
+            </li>
+            <li class="nav-item m-4">
+              <a class="nav-link text-white"  href="#"><small>CONTACT</small></a>
+            </li>
+           
+          </ul>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-end mt-2 me-2 ms-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#"><img src="img/icon-facebook.svg" alt="facebook">ddd</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link" href="#"><img src="img/icon-twitter.svg" alt="twitter">dd</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- función open alert -->
+<script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }else{
+          alert('Correo enviado!')
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+  </script>    
+
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

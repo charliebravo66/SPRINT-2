@@ -1,0 +1,71 @@
+// variables personalizadas
+$primary:#5265E1;
+$secundary:#FA5959;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.text-cabecera-form{
+  color:white;
+}
+
+.text-pie-separado{
+  color: white;
+  font-family: monospace;
+  padding-top:30px;
+
+}
+
+.bg-formulario{
+  background-color: #5265E1;
+}
+
+form{
+  padding-bottom:30px;
+}
+
+.alturaNavbar{
+  background-color: black;
+}
+
+.btn-ColorPrincipal{
+  background-color: #5265E1;
+}
+.btn-ColorSecundari{
+  background-color:#FA5959;
+}
+
+.nav-enlace-footer{
+  color: white;
+  text-decoration: none;
+}
+:hover .nav-enlace-footer{
+  color: white;
+  text-decoration:none;
+}
+:active .nav-enlace-footer{
+  color: white;
+  text-decoration:none;
+}
+.fondobotones{
+  background-color: aqua;
+}
+
+.boRojo {
+  background-color:#5265E1;
+}
+/** estilos tab **/
+#nav-home-tab{
+  border-bottom:6px solid #CC1414;
+}
+#nav-profile-tab{
+  border-bottom:3px solid #14cc1d;
+}
+:active #nav-home-tab{
+  border-bottom:3px solid #CC1414;
+}
+:active #nav-profile-tab{
+  border-bottom:3px solid #CC1414;
+}
+:active #nav-contact-tab{
+  border-bottom:3px solid #CC1414;
+}
