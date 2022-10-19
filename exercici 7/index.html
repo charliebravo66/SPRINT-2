@@ -42,14 +42,14 @@
     <div class="col-10 col-sm-8 col-lg-6 ">
       <img src="img/illustration-hero.svg" class="d-block mx-lg-auto img-fluid" alt="illustration-hero" loading="lazy">
     </div>
-    <div class="col-12 col-sm-8 col-lg-6">
+    <div class="col-12 col-sm-8 col-lg-6 col-md-6">
       <h1 class="display-5 fw-bold mb-3">A Simple Bookmark Manager</h1>
       <p class="lead me-5">A clean and simple interface to organize your favorite websites. Open a new browser tab and see
         your sites load instanly. Try it for free.</p>
       <!--div class="d-grid gap-2 d-md-flex justify-content-md-start"-->
       <div class="d-m-flex justify-content-md-start"> 
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get it on Chrome</button>
-        <button type="button" class="btn btn-secondary btn-lg px-4">Get it on Firefox</button>
+        <button type="button" class="btn btn-primary btn-md px-4 me-md-2">Get it on Chrome</button>
+        <button type="button" class="btn btn-secondary btn-md px-4">Get it on Firefox</button>
       </div>
     </div>
   </div>
@@ -90,7 +90,7 @@
           <p class="lead me-5">Organize your bookmarks however you like. Our simple
             drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
+            <button type="button" class="btn btn-primary btn-md px-5 me-md-2">More info</button>
           </div>
         </div>
    
@@ -111,7 +111,7 @@
           <p class="lead me-5">Our powerful search feature will help you find saved sites in no time at all. 
             No need to trawl through all of your bookmarks.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-5 me-md-2 btn-ttc">More info</button>
+            <button type="button" class="btn btn-primary btn-md px-5 me-md-2 btn-ttc">More info</button>
           </div>
         </div>
 
@@ -132,7 +132,7 @@
         <p class="lead me-5">Easily share your bookmarks and collections with others. Create a shareable link that you
           can send at the click of a button.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
+          <button type="button" class="btn btn-primary btn-md px-5 me-md-2">More info</button>
         </div>
       </div>
     </div>
@@ -167,7 +167,7 @@
         <br> 
         <hr style="width: 100%; height:2px; border-style: dotted none none; border-width: 4px; border-color: gray;">
         <br>
-        <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button> 
+        <button type="button" class="btn btn-primary btn-md px-3 me-md-1 ms-1">Add & Install Extension</button> 
         <br>
      </div>
     </div>
@@ -181,7 +181,7 @@
         <br> 
         <hr style="width: 100%; height:2px; border-style: dotted none none; border-width: 4px; border-color: gray;">
         <br> 
-        <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button> 
+        <button type="button" class="btn btn-primary btn-md px-3 me-md-1 ms-1">Add & Install Extension</button> 
       </div>
     </div>
 
@@ -195,7 +195,7 @@
         <br> 
         <hr style="width: 100%; height:2px; border-style: dotted none none; border-width: 4px; border-color: gray;">
         <br>
-        <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button>    
+        <button type="button" class="btn btn-primary btn-md px-3 me-md-1 ms-1">Add & Install Extension</button>    
       </div>
    </div>
 
@@ -260,7 +260,7 @@
 </div>
 <div class="container row justify-content-center mx-auto pt-5">
   <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-    <button type="button" class="btn btn-primary btn-lg px-5">More info</button>
+    <button type="button" class="btn btn-primary btn-md px-5">More info</button>
   </div>
 </div>
 <br>
@@ -289,13 +289,15 @@
 </div>
 
     <nav class="navbar navbar-expand-lg navbar-light alturaNavbar">
-      <div class="container justify-content-start pt-2 border">
-        <a class="navbar-brand me-5 ms-2" href="#"><img src="img/logo-bookmark.svg" alt="logo bookmark" width="150" height="24"></a>
+      <div class="container justify-content-center pt-2">
+        <div class="row col-6 col-lg-4 col-xl-2 col-sm-2 col-md-2" id="navbarNav">
+        <a class="navbar-brand" href="#"><img src="img/logo-bookmark.svg" alt="logo bookmark" width="150" height="24"></a>
+        </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="row justify-content-start mt-2 me-5 ms-5 border" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="row col-8 col-lg-8 col-xl-8 col-sm-6 col-md-8" id="navbarNav">
+             <ul class="navbar-nav">
             <li class="nav-item m-4">
               <a class="nav-enlace-footer" href="#" title="Features"><small>FEATURES</small></a>
             </li>
@@ -309,8 +311,8 @@
           </ul>
         </div>
 
-        <div class="col-2 col-sm-2 col-xs-2 col-md-2 row col-lg-2 justify-content-end mt-2 me-2 ms-5 border" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="row col-8 col-lg-2 col-xl-2 col-sm-2 col-md-2" id="navbarNav">
+          <ul class="navbar-nav justify-content-center">
             <li class="nav-item m-2">
               <a class="nav-enlace-footer" href="#"><img src="img/icon-facebook.svg" alt="facebook"></a>
             </li>
