@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- menú navegación cabecera-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container pt-2">
     <a class="navbar-brand me-5 ms-2" href="#"><img src="img/logo-bookmark.svg" alt="logo bookmark" width="150" height="24"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,16 +21,16 @@
     <div class="collapse navbar-collapse justify-content-end mt-2 me-5 ms-5" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item m-4">
-          <a class="nav-link" href="#"><small>FEATURES</small></a>
+          <a class="nav-link" href="#" title="Features"><small>FEATURES</small></a>
         </li>
         <li class="nav-item m-4">
-          <a class="nav-link" href="#"><small>PRICING</small></a>
+          <a class="nav-link" href="#" title="Pricing"><small>PRICING</small></a>
         </li>
         <li class="nav-item m-4">
-          <a class="nav-link" href="#"><small>CONTACT</small></a>
+          <a class="nav-link" href="#" title="Contact"><small>CONTACT</small></a>
         </li>
         <li class="nav-item m-4">
-          <button type="button" class="btn btn-danger">&nbsp;&nbsp;<small>LOGIN</small>&nbsp;&nbsp;</button>
+          <button type="button" class="btn btn-danger" title="Login">&nbsp;&nbsp;<small>LOGIN</small>&nbsp;&nbsp;</button>
         </li>
       </ul>
     </div>
@@ -39,14 +39,15 @@
 
 <div class="container col-xxl-12 px-4 py-5">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-    <div class="col-10 col-sm-8 col-lg-6">
-      <img src="img/illustration-hero.svg" class="d-block mx-lg-auto img-fluid" alt="illustration-hero" width="700" height="500" loading="lazy">
+    <div class="col-10 col-sm-8 col-lg-6 ">
+      <img src="img/illustration-hero.svg" class="d-block mx-lg-auto img-fluid" alt="illustration-hero" loading="lazy">
     </div>
-    <div class="col-lg-6">
+    <div class="col-12 col-sm-8 col-lg-6">
       <h1 class="display-5 fw-bold mb-3">A Simple Bookmark Manager</h1>
       <p class="lead me-5">A clean and simple interface to organize your favorite websites. Open a new browser tab and see
         your sites load instanly. Try it for free.</p>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+      <!--div class="d-grid gap-2 d-md-flex justify-content-md-start"-->
+      <div class="d-m-flex justify-content-md-start"> 
         <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get it on Chrome</button>
         <button type="button" class="btn btn-secondary btn-lg px-4">Get it on Firefox</button>
       </div>
@@ -65,14 +66,14 @@
   </div>    
 </div>
 
-<div class="tab-content col-sm-12 justify-content-center row container-fluid">
+<div class="tab-content col-sm-12 col-lg-12 justify-content-center row container-fluid">
   <div class="tab-pane fade show active col-sm-12 p-5 ms-5 container" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
 <nav>
-  <div class="nav nav-tabs justify-content-center bg-light" id="nav-tab" role="tablist">
-    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+  <div class="nav nav-tabs justify-content-center col-lg-4 w-30 mx-auto"  id="nav-tab" role="tablist">
+    <button class="nav-link p-4 active" id="nav-home-tab myTab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+    <button class="nav-link p-4" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+    <button class="nav-link p-4" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
   </div>
 </nav>
 <div class="tab-content row container-fluid justify-content-center" id="nav-tabContent">
@@ -81,7 +82,10 @@
     <div class="container col-xxl-12 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       
-        <div class="col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6 col-sm-6 order-lg-2">
+          <img src="img/illustration-features-tab-1.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col-lg-6 ">
           <h1 class="display-5 fw-bold mb-3">Bookmark in one click</h1>
           <p class="lead me-5">Organize your bookmarks however you like. Our simple
             drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
@@ -89,9 +93,7 @@
             <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
           </div>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="img/illustration-features-tab-1.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
-        </div>
+   
       </div>
     </div>
   </div>
@@ -100,17 +102,19 @@
     <div class="container col-xxl-12 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       
+        <div class="col-10 col-sm-8 col-lg-6 order-lg-2">
+          <img src="img/illustration-features-tab-2.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
+        </div>
+
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold mb-3">Intelligent Search</h1>
           <p class="lead me-5">Our powerful search feature will help you find saved sites in no time at all. 
             No need to trawl through all of your bookmarks.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
+            <button type="button" class="btn btn-primary btn-lg px-5 me-md-2 btn-ttc">More info</button>
           </div>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="img/illustration-features-tab-2.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
-        </div>
+
       </div>
     </div>
   </div>
@@ -119,6 +123,10 @@
   <div class="container col-xxl-12 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
      
+      <div class="col-10 col-sm-8 col-lg-6 order-lg-2">
+        <img src="img/illustration-features-tab-3.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
+      </div>
+
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold mb-3">Share you bookmarks</h1>
         <p class="lead me-5">Easily share your bookmarks and collections with others. Create a shareable link that you
@@ -126,9 +134,6 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-5 me-md-2">More info</button>
         </div>
-      </div>
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="img/illustration-features-tab-3.svg" alt="imagen hero" class="img-fluid mx-auto d-block">
       </div>
     </div>
   </div>
@@ -153,42 +158,42 @@
  
 <div class="row container-fluid justify-content-center col-sm-12 pt-5">
 
-    <div class="col-12 col-sm-2 text-center">      
+    <div class="col-12 col-sm-4 col-lg-2 text-center">      
       <div class="shadow-sm p-3 mb-5 bg-body rounded">
         <img src="img/logo-chrome.svg" class="mx-lg-auto img-fluid pb-5" alt="logo chrome" loading="lazy">
         <br>
         <h4 class="fw-bold">Add to Chrome</h1>
         <p class="text-secondary">Minimum version 62</p>
         <br> 
-        <hr class="border-2 border-top border-secondary">
+        <hr style="width: 100%; height:2px; border-style: dotted none none; border-width: 4px; border-color: gray;">
         <br>
         <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button> 
         <br>
      </div>
     </div>
 
-    <div class="col-12 col-sm-2 text-center pt-5">
+    <div class="col-12 col-sm-4 col-lg-2 text-center pt-5">
       <div class="shadow-sm p-3 mb-5 bg-body rounded">
         <img src="img/logo-firefox.svg" class="mx-lg-auto img-fluid pb-5" alt="logo firefox" loading="lazy">
         <br>
         <h4 class="fw-bold">Add to Firefox</h1>
         <p class="text-secondary">Minimum version 55</p>
         <br> 
-        <hr class="border-2 border-top border-secondary">
+        <hr style="width: 100%; height:2px; border-style: dotted none none; border-width: 4px; border-color: gray;">
         <br> 
         <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button> 
       </div>
     </div>
 
 
-    <div class="col-12 col-sm-2 text-center pt-5 mt-5 justify-content-center">
+    <div class="col-12 col-sm-4 col-lg-2 text-center pt-5 mt-5 justify-content-center">
       <div class="shadow-sm p-3 mb-5 bg-body rounded">
         <img src="img/logo-opera.svg" class="mx-lg-auto img-fluid pb-5" alt="logo opera" loading="lazy">
         <br>
         <h4 class="fw-bold">Add to Opera</h1>
         <p class="text-secondary">Minimum version 46</p>
         <br> 
-        <hr class="border-2 border-top border-secondary">
+        <hr style="width: 100%; height:2px; border-style: dotted none none; border-width: 4px; border-color: gray;">
         <br>
         <button type="button" class="btn btn-primary btn-lg px-3 me-md-1 ms-1">Add & Install Extension</button>    
       </div>
@@ -200,7 +205,7 @@
 
   <!---faqs-->
   <div class="container-fluid row justify-content-center mx-auto">
-    <div class="col-sm-12 p-1 ms-3 text-white">
+    <div class="col-sm-12 col-12 col-lg-12 col-xs-12 col-md-12 p-1 ms-3 text-white">
       <h1 class="text-body ms-4 text-center fw-bold">Frequently Asked Questions</h1>
       <p class="text-secondary ms-4 pt-3 text-center lead me-5">Here are some of our FAQs. If you have any
         other questions<br> you'd like answered please feel free to email us.
@@ -209,45 +214,45 @@
   </div>
 
   <div class="container row justify-content-center mx-auto pt-5">
-    <div class="accordion accordion-flush container col-sm-6" id="accordionFlushExample">
+    <div class="accordion accordion-flush container col-sm-12 col-12 col-lg-6 col-xs-12 col-md-10" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            <b>What is Bookmark?</b>
+            <p style="font-size:1em; font-weight:bold;">What is Bookmark?</p>
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          <div class="accordion-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            <b>How can I request a new browser?</b>
+            <p style="font-size:1em; font-weight:bold;">How can I request a new browser?</p>
           </button>
         </h2>
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          <div class="accordion-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            <b>Is there a mobile app?</b>
+            <p style="font-size:1em; font-weight:bold;">Is there a mobile app?</p>
           </button>
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          <div class="accordion-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
         </div>
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-           <b>What about other Chromium browsers?</b>
+            <p style="font-size:1em; font-weight:bold;">What about other Chromium browsers?</p>
           </button>
         </h2>
         <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          <div class="accordion-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
         </div>
       </div>
     </div>
@@ -268,14 +273,15 @@
     <h3 class="text-cabecera-form ms-4 text-center fw-bold">Stay up-to-date with what<br> we're doing</h1>
     <br>
     <form class="row g-3 justify-content-center mx-auto needs-validation" novalidate>
-      <div class="col-auto position-relative">
+      <!--div class="col-auto position-relative"-->
+      <div class="col-auto col-6 col-xs-4 col-sm-4 col-md-4 col-lg-2 col-xl-2 justify-content-md-center"> 
         <label for="inputEmail" class="visually-hidden">Enter your email address</label>
         <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
         <div class="invalid-tooltip">Formato de e-mail incorrecto</div>
         <div class="valid-tooltip">E-mail correcto</div>
       </div>
     
-      <div class="col-auto">
+      <div class="col-auto">        
         <button type="submit" class="btn btn-danger btn-ColorSecundari mb-3">Contact us</button>
       </div>
     </form>
@@ -283,33 +289,33 @@
 </div>
 
     <nav class="navbar navbar-expand-lg navbar-light alturaNavbar">
-      <div class="container pt-2">
+      <div class="container justify-content-start pt-2 border">
         <a class="navbar-brand me-5 ms-2" href="#"><img src="img/logo-bookmark.svg" alt="logo bookmark" width="150" height="24"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-start mt-2 me-5 ms-5" id="navbarNav">
+        <div class="row justify-content-start mt-2 me-5 ms-5 border" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item m-4">
-              <a class="nav-link text-white" href="#"><small>FEATURES</small></a>
+              <a class="nav-enlace-footer" href="#" title="Features"><small>FEATURES</small></a>
             </li>
             <li class="nav-item m-4">
-              <a class="nav-link text-white" href="#"><small>PRICING</small></a>
+              <a class="nav-enlace-footer" href="#" title="Pricing"><small>PRICING</small></a>
             </li>
             <li class="nav-item m-4">
-              <a class="nav-link text-white"  href="#"><small>CONTACT</small></a>
+              <a class="nav-enlace-footer" href="#" title="Contact"><small>CONTACT</small></a>
             </li>
            
           </ul>
         </div>
 
-        <div class="collapse navbar-collapse justify-content-end mt-2 me-2 ms-5" id="navbarNav">
+        <div class="col-2 col-sm-2 col-xs-2 col-md-2 row col-lg-2 justify-content-end mt-2 me-2 ms-5 border" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item m-2">
-              <a class="nav-link" href="#"><img src="img/icon-facebook.svg" alt="facebook">ddd</a>
+              <a class="nav-enlace-footer" href="#"><img src="img/icon-facebook.svg" alt="facebook"></a>
             </li>
             <li class="nav-item m-2">
-              <a class="nav-link" href="#"><img src="img/icon-twitter.svg" alt="twitter">dd</a>
+              <a class="nav-enlace-footer" href="#"><img src="img/icon-twitter.svg" alt="twitter"></a>
             </li>
            
           </ul>

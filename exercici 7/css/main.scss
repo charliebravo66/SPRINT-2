@@ -38,11 +38,11 @@ form{
   color: white;
   text-decoration: none;
 }
-:hover .nav-enlace-footer{
-  color: white;
+.nav-enlace-footer:hover {
+  color: #FA5959;
   text-decoration:none;
 }
-:active .nav-enlace-footer{
+.nav-enlace-footer:active{
   color: white;
   text-decoration:none;
 }
@@ -60,6 +60,73 @@ form{
 :active #nav-home-tab{
   border-bottom:0px solid #CC1414;
 }
-.nav-link{
-  border-bottom:3px solid #CC1414;
+
+.accordion-button:hover{
+  color: #FA5959;
+  text-decoration:none;
 }
+
+.accordion-button:active{
+  color: #FA5959;
+  text-decoration:none;
+}
+
+.btn-danger:hover{
+  background-color:rgb(255, 255, 255) !important;
+  border:1px solid #FA5959 !important;
+  color: #FA5959;
+
+}
+.btn-primary:hover{
+  background-color:rgb(255, 255, 255) !important;
+  border:1px solid #5265E1 !important;
+  color: #5265E1;
+}
+.btn-secondary:hover{
+  background-color:rgb(255, 255, 255) !important;
+  border:1px solid gray !important;
+  color: gray;
+}
+
+
+.nav-link:hover{
+  color:#FA5959;
+  border-top: 0px solid rgb(255, 255, 255) !important;
+  border-left: 0px solid rgb(255, 255, 255) !important;
+  border-right: 0px solid rgb(255, 255, 255) !important;
+    
+}
+
+.nav-link.active {
+  border-bottom: 4px solid #fa5959 !important;
+  color: black !important;
+  /*padding-bottom: 12px !important;*/
+  border-top: 0px solid rgb(255, 255, 255) !important;
+  border-left: 0px solid rgb(255, 255, 255) !important;
+  border-right: 0px solid rgb(255, 255, 255) !important;    
+}
+
+.accordion-header:active {
+  border: 0px solid #fa5959 !important;
+  background-color: white !important;
+}
+
+
+
+#myTab {
+  flex-direction: row !important;
+  border-bottom: 0px;
+
+  & .nav-item {
+      border-top: 0 !important;
+      border-top: 0px solid rgb(255, 255, 255) !important; 
+      border-bottom: 1px solid rgb(193, 193, 193) !important; 
+
+
+      & .nav-link:hover {
+      color: #fa5959 !important;
+      }
+
+
+  }
+  }
