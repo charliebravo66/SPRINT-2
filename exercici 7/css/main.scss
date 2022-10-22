@@ -80,8 +80,18 @@ form{
   background-color:rgb(255, 255, 255) !important;
   border:1px solid #5265E1 !important;
   color: #5265E1;
+  
 }
-.btn-secondary:hover{
+
+
+.btn-light{
+  border:0px solid rgb(226, 221, 221) !important;
+  color: black;
+  background-color: rgb(233, 231, 231) !important;
+
+}
+
+.btn-light:hover{
   background-color:rgb(255, 255, 255) !important;
   border:1px solid gray !important;
   color: gray;
@@ -94,6 +104,9 @@ form{
   border-left: 0px solid rgb(255, 255, 255) !important;
   border-right: 0px solid rgb(255, 255, 255) !important;
     
+}
+.nav-link{
+  color:black;
 }
 
 .nav-link.active {
@@ -129,3 +142,91 @@ form{
 
   }
   }
+
+.logo_bookmark{
+  color:white!important;
+}  
+.icono_facebook:hover{
+  color:#FA5959 !important;
+}
+.icono_twitter:hover{
+  color:#FA5959 !important;
+}
+
+#fondo_redondeado_azul_1{
+  
+    
+    border:0px solid  #5265E1;
+    border-radius:0% 0% 0% 40%;
+    background-color: #5265E1;
+    position:absolute;
+  
+
+    z-index: 0;
+    top:240px;
+
+
+  
+
+
+}
+#ilustra_1{
+  position:relative;
+  z-index: 1;
+  
+
+
+  /*margin-left: 0%;
+  margin-right: -28%;*/
+
+
+  
+}
+#ilustra_2{
+  position:relative;
+  z-index: 1;
+
+
+
+
+  
+}
+
+#ilustra_3{
+  position:relative;
+  z-index: 1;
+
+  /*margin-left: 0%;
+  margin-right: -28%;*/
+
+
+  
+}
+
+#ilustra_4{
+  position:relative;
+  z-index: 1;
+
+  /*margin-left: 0%;
+  margin-right: -28%;*/
+
+
+  
+}
+
+#fondo_redondeado_azul_2{
+  
+  vertical-align: bottom;
+  border:0px solid  #5265E1;
+  border-radius:0% 0% 40% 0%;
+  background-color: #5265E1;
+  position:absolute;
+  width:25%;
+  height:40%;
+  z-index: 0;
+  top:auto;
+
+  margin-right: 40%;
+  margin-top: 10%;
+  
+}
