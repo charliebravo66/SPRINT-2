@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionamiento</title>
+<style>
+ p{
+        margin-top: 0;
+    }
+    /*.fondo{
+         position: relative;
+         background-color: blue;
+         width: 20%;
+         height:auto;
+         min-height:400px;
+         min-width: 200px;
+    }
+    .layers{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        width: 20%;
+        height: 20%;
+    }*/
+
+    #ilustra_1{
+        position:relative;
+        z-index: 1;
+
+
+    }
+    #fondo_redondeado_azul_1{
+        border:0px solid  #5265E1;
+        border-radius:0% 0% 0% 40%;
+        background-color: #5265E1;
+        position:absolute;
+         width: auto;
+         height:auto;
+         min-height:300px;
+         min-width: 300px;
+         top:15%;
+         right: 10%;
+    }
+
+    #carroussel-item{
+         position: relative;
+         border:5px solid  #b30b62;
+        border-radius:0% 0% 0% 40%;
+        background-color: #5265E1;
+        width: 580px;
+         height:400px;
+         min-height:340px;
+         min-width: 100px;
+         top:140px;
+         right: 45%;
+         left:60%
+    }
+    #layers{
+        position: absolute;
+        top: -100px;
+        left: -120px;
+        width: 100%;
+        height: 100%;
+        border:5px solid  #330b91;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="fondo">
+        <!--img src="https://placeimg.com/1000/1000/tech" width="400px" height="400px" -->
+    
+        <!--div class="layers">
+            <img src="https://placeimg.com/1000/1000/nature" width="400px" height="400px">
+    
+
+        </div-->
+    </div>
+    <!--div class="container col-xxl-12 px-4 py-5">
+        <div class="row flex-lg-row-reverse g-5 py-5">
+            <div id="fondo_redondeado_azul_1" class="me-2 mt-4 h-25 w-25">
+           
+        <div class="col-12 col-sm-12 col-lg-6 col-md-6 col-xs-6 col-xl-6 mt-1" id="ilustra_1">
+                <img src="img/illustration-hero.svg" class="img-fluid"  alt="illustration-hero" loading="lazy">      
+        </div>
+    </div>
+    </div-->
+
+    <div class="container col-xxl-12 px-4 py-5">    
+                <div class="row flex-lg-row-reverse g-5 py-5">
+                    <div id="carroussel-item" class="me-2 mt-4 h-25 w-25">
+                        <div class="col-12 col-sm-12 col-lg-6 col-md-6 col-xs-6 col-xl-6 mt-1" id="layers">
+                             <img src="img/illustration-hero.svg" class="img-fluid"  alt="illustration-hero" loading="lazy">     
+                        </div>
+                    </div>
+                </div>
+    </div>
+</body>
+</html>

@@ -11086,12 +11086,11 @@ form {
   border-radius: 0% 0% 0% 40%;
   background-color: #5265E1;
   position: absolute;
-  -o-object-fit: fill;
-     object-fit: fill;
   z-index: 0;
   top: 340px;
+  height: auto;
+  width: auto;
   /*transform: translate(10%, 5%);*/
-  /*right: 15%;*/
 }
 
 #ilustra_1 {
