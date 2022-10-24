@@ -11069,6 +11069,7 @@ form {
   color: #fa5959 !important;
 }
 
+/* logo e icono cambio color */
 .logo_bookmark {
   color: white !important;
 }
@@ -11081,16 +11082,16 @@ form {
   color: #FA5959 !important;
 }
 
+/* fondo capa e ilustraciones */
 #fondo_redondeado_azul_1 {
-  border: 0px solid #5265E1;
+  border: 0px solid #e15260;
   border-radius: 0% 0% 0% 40%;
   background-color: #5265E1;
   position: absolute;
   z-index: 0;
-  top: 340px;
+  top: 140px;
   height: auto;
   width: auto;
-  /*transform: translate(10%, 5%);*/
 }
 
 #ilustra_1 {
@@ -11106,27 +11107,32 @@ form {
 #ilustra_3 {
   position: relative;
   z-index: 1;
-  /*margin-left: 0%;
-  margin-right: -28%;*/
 }
 
 #ilustra_4 {
   position: relative;
   z-index: 1;
-  /*margin-left: 0%;
-  margin-right: -28%;*/
 }
 
 #fondo_redondeado_azul_2 {
-  vertical-align: bottom;
-  border: 0px solid #5265E1;
+  /* vertical-align: bottom;
+   border-radius:0% 0% 40% 0%;
+   background-color: #5265E1;
+   position:absolute;
+   /*width:25%;
+   height:40%;*/
+  /*z-index: 0;
+  top:400px;
+    height:auto;
+    width: auto;*/
+  /*margin-right: 40%;
+  margin-top: 10%;*/
+  border: 0px solid #e15260;
   border-radius: 0% 0% 40% 0%;
   background-color: #5265E1;
   position: absolute;
-  width: 25%;
-  height: 40%;
   z-index: 0;
-  top: auto;
-  margin-right: 40%;
-  margin-top: 10%;
+  top: 300px;
+  height: auto;
+  width: auto;
 }/*# sourceMappingURL=main.css.map */
